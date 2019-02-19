@@ -1,0 +1,13 @@
+type Query {
+  followerInfo(
+    startTimestamp: String,
+    endTimestamp: String
+  ) : [FollowerInfo]
+}
+
+type FollowerInfo {
+    id: ID!
+    timestamp: String!
+    followerCount: Int
+    followerList: [String]
+}
